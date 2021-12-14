@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/resposive.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Hostel Pet Friend Form</h1>
+            <p id="description" class="description text-center">
+                Thank you for staying at our hostel.
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Pet Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your pet name"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="name-label" for="name">Pet Owner's Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your owner's name"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Pet Age<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+            </div>
+            <div class="form-group">
+                <p>What species is your pet?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="Mmammal">Mamal</option>
+                    <option value="amphibian">Amphibian</option>
+                    <option value="reptile">Reptile</option>
+                    <option value="bird">Bird</option>
+                    <option value="fish">Fish</option>
+                    <option value="nvertebrate">Invertebrate</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="species">Specify your pet's species (cat, dog, fish, frog, bird,
+                    etc.)</label>
+                <input type="specie" name="specie" id="specie" class="form-control"
+                    placeholder="Enter your pet's species" required />
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your pet's personality?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="aggressive">Agressive</option>
+                    <option value="shy">Shy</option>
+                    <option value="active">Active</option>
+                    <option value="passsive">Passive</option>
+                    <option value="sociable">Sociable</option>
+                    <option value="independent">Independent</option>
+                    <option value="playful">Playful</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Would you recommend Hostel Pet Friend to a friend?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                        checked />Certainly</label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+
+                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />I'm not
+                    sure.</label>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    Which made you choose Hostel Pet Friend?
+                </p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="accommodations">Accommodations</option>
+                    <option value="location">Location</option>
+                    <option value="services">Special Services</option>
+                    <option value="tariffs">Tariffs</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    What would you like to see improved?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+
+                <label><input name="prefer" value="tariffs" type="checkbox" class="input-checkbox" />Tariffs</label>
+                <label>
+                    <input name="prefer" value="services" type="checkbox" class="input-checkbox" />Services</label>
+                <label><input name="prefer" value="daily-options" type="checkbox" class="input-checkbox" />Daily
+                    Options</label>
+                <label><input name="prefer" value="packages" type="checkbox" class="input-checkbox" />Packages</label>
+                <label><input name="prefer" value="pet-shop" type="checkbox" class="input-checkbox" />Pet Shop</label>
+                <label><input name="prefer" value="food" type="checkbox" class="input-checkbox" />Food</label>
+                <label><input name="prefer" value="day-use" type="checkbox" class="input-checkbox" />Day use</label>
+                <label><input name="prefer" value="loyalty-club" type="checkbox" class="input-checkbox" />Loyalty
+                    Club</label>
+                <label><input name="prefer" value="toys" type="checkbox" class="input-checkbox" />Toys</label>
+                <label><input name="prefer" value="activities" type="checkbox"
+                        class="input-checkbox" />Activities</label>
+                <label><input name="prefer" value="training" type="checkbox" class="input-checkbox" />Training</label>
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
